@@ -1,3 +1,2 @@
 argparse
-ntpath
-apachebeam
+apache_beam
