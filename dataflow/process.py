@@ -49,7 +49,7 @@ def run(argv=None):
         rows = pipline | "Read from text file" >> beam.io.ReadFromText(know_args.input)
 
         #this stage of the pipeline translates from a delimeiter single row
-        dict_rows=rows | "convert to Bigquery row" >> beam.Map(lambda r: row_transformation.parse(r))
+        dict_records=rows | "convert to Bigquery row" >> beam.Map(lambda r: row_transformation.parse(r))
 
         dict_records | "write ato bigQuey" >> beam.io.Write(
             beam.io.BigQuerySink(know_args.output,
