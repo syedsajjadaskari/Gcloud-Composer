@@ -32,3 +32,7 @@ To use this repository, you will need to:
 5. Configure the Dataflow job to be triggered by the Cloud Function.
 
 Once you have completed these steps, your Dataflow job will be automatically triggered whenever a new file arrives in Google Cloud Storage. The Dataflow job will process the data and load it into BigQuery.
+
+
+for cloud fuction pleserefer this links to trigger cloud composer using cloud function.
+https://cloud.google.com/composer/docs/how-to/using/triggering-with-gcf
